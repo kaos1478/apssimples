@@ -28,11 +28,11 @@ export default function NavbarComponent() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/">
+            <Nav.Link to="/">
               <Home />
               {"\u00A0"}Home
             </Nav.Link>
-            <Nav.Link href="/agenda">
+            <Nav.Link to="/agenda">
               <CalendarToday />
               {"\u00A0"}Agenda
             </Nav.Link>
