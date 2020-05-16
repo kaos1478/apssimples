@@ -12,9 +12,9 @@ export default function Routes() {
     <BrowserRouter>
       <StoreProvider>
         <Switch>
-          <Route component={Loginpage} exact path="/login/" />
+          <Route component={Loginpage} exact path="/login" />
           <RoutesPrivate component={HomePage} exact path="/" />
-          <RoutesPrivate component={AgendaPage} exact path="/agenda/" />
+          <RoutesPrivate component={AgendaPage} exact path="/agenda" />
         </Switch>
       </StoreProvider>
     </BrowserRouter>
