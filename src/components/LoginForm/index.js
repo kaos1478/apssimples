@@ -1,15 +1,21 @@
 import React, { useContext, useState } from "react";
 import StoreContext from "../../components/Store/Context";
-import { Form, Button, Popover, OverlayTrigger } from "react-bootstrap";
+import { Form, Popover, OverlayTrigger } from "react-bootstrap";
 import { Container } from "./styles";
 import { useHistory } from "react-router-dom";
-import BackgroundImg from "../../assets/imgs/background1.jpg";
+import BackgroundImg from "../../assets/imgs/arvores.jpg";
+
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+
+import Button from "@material-ui/core/Button";
 
 export default function LoginForm() {
   function login({ user, password }) {
     if (user === "admin" && password === "admin") {
       return { token: "1234" };
     }
+    alert("Usuário e Senha inválidos!");
     return { error: "Usuário ou senha inválida!" };
   }
 
@@ -45,7 +51,7 @@ export default function LoginForm() {
     <Popover id="popover-basic">
       <Popover.Title as="h3">Algum Problema?</Popover.Title>
       <Popover.Content>
-        Entre em contato por telefone <strong>(14)99719-0307</strong>
+        Entre em contato por telefone <strong>(xx)xxxxx-xxxx</strong>
       </Popover.Content>
     </Popover>
   );
@@ -53,32 +59,36 @@ export default function LoginForm() {
     <Container img={BackgroundImg}>
       <Form className="form-login" onSubmit={onSubmit}>
         <Form.Group controlId="usuario">
-          <Form.Label>Usuário</Form.Label>
-          <Form.Control
+          <TextField
+            id="standard-basic"
             type="user"
             name="user"
             onChange={onChange}
-            placeholder="Digite seu usuário"
             value={values.user}
+            label="Usuário"
           />
         </Form.Group>
 
         <Form.Group controlId="senha">
-          <Form.Label>Senha</Form.Label>
-          <Form.Control
+          <TextField
+            id="standard-basic"
             type="password"
             name="password"
             onChange={onChange}
-            placeholder="Senha"
             value={values.password}
+            label="Senha"
           />
         </Form.Group>
+        <br />
         <div className="btns">
-          <Button variant="success" type="submit">
+          <Button variant="contained" color="primary" type="submit">
             Logar
           </Button>
+
           <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-            <Button variant="outline-primary">Ajuda</Button>
+            <Button variant="outlined" color="primary">
+              Ajuda
+            </Button>
           </OverlayTrigger>
         </div>
       </Form>

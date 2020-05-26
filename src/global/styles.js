@@ -4,9 +4,10 @@ export const GlobalStyle = createGlobalStyle`
   /*body {
     color: ${(props) => (props.whiteColor ? "white" : "black")};
   }*/
-  body, html, .App{
+  body, html, .App, #root{
     font-family: 'roboto', 'arial';
     min-height: 100vh;
+    max-width: 100vw;
   }
 
   * {
@@ -15,5 +16,10 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  .conteudo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
 
 `;

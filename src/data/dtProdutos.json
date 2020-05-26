@@ -1,0 +1,13 @@
+{
+  "data": [
+    {"nome": "Esterco 10KG", "imgUrl":"https://imagens.mfrural.com.br/mfrural-produtos-us/223796-264183-1423842-terra-adubada-em-sao-goncalo.jpg", "categoria": "Esterco", "valor": "R$ 10,00" },
+    {"nome": "Esterco 20KG", "imgUrl":"https://img.clasf.com.br/2018/01/04/Esterco-bovino-empacotado-20180104054624.jpg", "categoria": "Esterco", "valor": "R$ 15,00"},
+    {"nome": "Esterco 50KG", "imgUrl":"https://http2.mlstatic.com/saco-de-esterco-bovino-100-puro-10-kg-cultivo-indoor-D_NQ_NP_966991-MLB29034203561_122018-O.jpg", "categoria": "Esterco", "valor": "R$ 30,00"},
+    {"nome": "Muda de Carvalho", "imgUrl":"https://imagens.mfrural.com.br/mfrural-produtos-us/271255-272887-1439432-mudas-de-carvalho-ingles.jpg", "categoria": "Muda", "valor": "R$ 40,00"},
+    {"nome": "Muda de Pinheiro", "imgUrl":"https://http2.mlstatic.com/muda-pinheiro-tuia-compacta-15m-D_NQ_NP_900758-MLB26537153791_122017-F.jpg", "categoria": "Muda", "valor": "R$ 50,00"},
+    {"nome": "Muda de Eucalipto", "imgUrl":"https://midia.gruposinos.com.br/_midias/jpg/2017/06/19/eucalipto-3071905.jpg", "categoria": "Muda", "valor": "R$ 60,00" },
+    {"nome": "Semente de Carvalho", "imgUrl":"https://www.coladaweb.com/wp-content/uploads/2014/12/Sementes.png", "categoria": "Semente", "valor": "R$ 70,00"},
+    {"nome": "Semente de Pinheiro", "imgUrl":"https://www.coladaweb.com/wp-content/uploads/2014/12/Sementes.png", "categoria": "Semente", "valor": "R$ 80,00"},
+    {"nome": "Semente de Eucalipto", "imgUrl":"https://www.coladaweb.com/wp-content/uploads/2014/12/Sementes.png", "categoria": "Semente", "valor": "R$ 90,00" }
+  ]
+}

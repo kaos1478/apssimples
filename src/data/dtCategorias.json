@@ -1,0 +1,21 @@
+{
+    "data" : [
+      {
+        "_id" : "7373ad92-6fea-468f-8db6-e65e4aedd4b2",
+        "nome" : "Esterco",
+        "excluido" : 0
+      },
+      {
+        "id" : "a9265ac3-209f-4af0-ad76-36dfc84c55ca",
+        "nome" : "Muda",
+        "excluido" : 0
+      },
+      
+      {
+        "id" : "5d6a87e6-ae78-497d-ab10-197efc70a33b",
+        "nome" : "Semente",
+        "excluido" : 0
+      }
+    ]
+  }
+  
