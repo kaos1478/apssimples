@@ -25,6 +25,7 @@ function ProdutosDetalhe({ nome, valor, cor, imgUrl }) {
   const { saveCar, carProducts } = useContext(CarContext);
 
   const handleAddProductToCar = () => {
+    alert(nome + " Adicionado ao carrinho!");
     saveCar(nome);
   };
 

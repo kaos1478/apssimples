@@ -54,6 +54,11 @@ export default function SimpleModal() {
     alert("Checkout Concluído!");
   };
 
+  const handleCancelCar = () => {
+    deleteCar();
+    alert("Carrinho esvaziado com sucesso!");
+  };
+
   const body = (
     <div style={modalStyle} className={classes.paper}>
       <h2 id="simple-modal-title">Carrinho</h2>
@@ -68,6 +73,9 @@ export default function SimpleModal() {
         <br />
         <Button variant="contained" color="primary" onClick={handleClearCar}>
           Checkout
+        </Button>
+        <Button variant="contained" color="alert" onClick={handleCancelCar}>
+          Limpar Carrinho
         </Button>
       </p>
     </div>

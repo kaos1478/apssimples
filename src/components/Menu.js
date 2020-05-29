@@ -9,6 +9,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { useHistory } from "react-router-dom";
 import StoreContext from "../components/Store/Context"; //"../../components/Store/Context";
 import SimpleModal from "./ModalCar";
+import { useUser } from "../contexts/User";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Menu({ nomeApp }) {
   const { setToken } = useContext(StoreContext);
+  const { user } = useUser();
 
   function login() {
     return { token: null };
@@ -56,7 +58,7 @@ export default function Menu({ nomeApp }) {
           </Typography>
           <SimpleModal />
           <Button color="inherit" onClick={logout}>
-            Logout
+            Logout ({user})
           </Button>
         </Toolbar>
       </AppBar>
